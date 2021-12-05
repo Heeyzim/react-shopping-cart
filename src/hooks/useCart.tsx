@@ -96,6 +96,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       
       if (amount < 1) {
         toast.error('Quantidade solicitada fora de estoque');
+        return;
       }
       
       
